@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Content Type Meta tag -->
+  <meta charset="utf-8">
+
+  <!--Responsive Viewport Meta tag-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Previsão Incrível</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  
+  
+  <h1>Previsão Incrível</h1>
+
+  <div class="city-search">
+    <div class="search-container">
+      <form action="#">
+        <input type="text" id="city" placeholder="escolha uma cidade">
+        <input type="submit" id="search" value="Pesquisar">
+      </form>
+    </div>
+  </div>
+
+<!-- Rounded switch -->
+<div class="switch-container">
+  
+    <a>°C</a><p> </p> 
+    <label class="switch" >
+      <input type="checkbox">
+      <span class="slider round" id="tempToggle"></span>
+    </label>
+    <a> °F</a>
+   
+</div>
+
+  <div class="card">
+      <!-- loader icon number 5 -->
+      <div id="loader" class="loader loader--style5" title="4">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+           width="24px" height="30px" viewBox="0 0 24 30" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+          <rect x="0" y="0" width="4" height="10" fill="#333">
+            <animateTransform attributeType="xml"
+              attributeName="transform" type="translate"
+              values="0 0; 0 20; 0 0"
+              begin="0" dur="0.6s" repeatCount="indefinite" />
+          </rect>
+          <rect x="10" y="0" width="4" height="10" fill="#333">
+            <animateTransform attributeType="xml"
+              attributeName="transform" type="translate"
+              values="0 0; 0 20; 0 0"
+              begin="0.2s" dur="0.6s" repeatCount="indefinite" />
+          </rect>
+          <rect x="20" y="0" width="4" height="10" fill="#333">
+            <animateTransform attributeType="xml"
+              attributeName="transform" type="translate"
+              values="0 0; 0 20; 0 0"
+              begin="0.4s" dur="0.6s" repeatCount="indefinite" />
+          </rect>
+        </svg>
+      </div>
+
+    <div id="forecast">
+      <h2 id="city-name">Recife</h2>
+
+      <div class="today">
+        <div class="icon-container">
+          <img id="weather-icon">
+          <div class="temperature">
+            <span id="current-temperature"></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="info-container">
+          <div>
+            <span><b>Tempo: </b></span>
+            <span id="current-weather"></span>
+          </div>
+
+          <div>
+            <span><b>Vento: </b></span>
+            <span id="current-wind"></span>
+            <a><span>km/h</span></a>
+          </div>
+
+          <div>
+              <span><b>Umidade: </b></span>
+              <span id="current-humidity"></span>
+              <span>%</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="next-days" class="next-days">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+    <p></p>  
+    </div>  
+  </div>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
